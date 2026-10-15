@@ -3,7 +3,7 @@
 Read this file and `docs/SPEC.md` at the start of every session. `SPEC.md` is the source of truth for *what* to build. This file is the source of truth for *how* to work.
 
 ## Who this is for
-The owner is a Class 11 student in India (JEE / physics olympiad level) building this as a university-application portfolio project. He is new to Python and will study every file you write, then defend it in interviews at universities like Oxford. Two consequences:
+The owner is a Class 11 student in India (JEE / physics olympiad level). This started as a university-application project, but **the owner's goal is a long-term career in fusion research, and the project is to be treated as research-grade (PhD level or beyond), not a school project.** Aim for methods and results that would stand up in a real fusion / ML venue, and push past what published disruption predictors do (see `docs/ROADMAP.md`, which is the agreed long-term plan; stick to it). He is new to Python, studies the code daily, and explains it back before moving on. Two consequences:
 
 1. **Readability beats cleverness, every time.** Prefer a plain loop over a dense one-liner if the loop is easier to follow. No metaprogramming, no decorators beyond `@dataclass`, no deep class hierarchies, no abstract base classes. A function should do one thing and fit on one screen (aim for under ~40 lines).
 2. **Every decision must be explainable.** When you choose a parameter (window length, threshold, horizon), put it in `src/config.py` with a one-line comment saying why. When you make a judgement call, log it in `NOTES.md`.
